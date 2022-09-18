@@ -1,0 +1,377 @@
+<!DOCTYPE HTML>
+<html>
+<head>	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css" />
+	<script type="text/javascript" src="jquery-3.5.1.min.js"></script>
+	<title>4th wibpage</title>
+
+</head>
+
+<body>
+	<div class="main_box">
+		<div class="content_box">
+		
+		
+		
+			
+			<header>
+				<nav class="navBar"> 
+					<div id="icon_div">
+						<i class="fa fa-ravelry" aria-hidden="true" style="font-size:24px"></i><span id="RA">RA</span><span id="mylogo">R</span>
+					</div>
+					
+					<ul class="ul">
+						<li id="btnHom">HOME</li>
+						<li id="btnWrk">WORK
+							<div class="subManu_1">
+								<ul>
+								<li>ABCD</li>
+								<li>ABCD</li>
+								<li>ABCD</li>
+								<li>ABCD</li>
+								</ul>
+							</div>
+						</li>
+						<li id="btnPrc">PROCESS
+							<div class="subManu_2">
+								<ul>
+								<li>ABCD</li>
+								<li>ABCD</li>
+								<li>ABCD</li>
+								<li>ABCD</li>
+								</ul>
+							</div>
+						</li>
+						<li id="btnSrv">SERVCES
+							<div class="subManu_3">
+								<ul>
+								<li>ABCD</li>
+								<li>ABCD</li>
+								<li>ABCD</li>
+								<li>ABCD</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				
+				</nav>
+				
+			</header>
+			
+				<div class="setting" >
+					<i class="fa fa-cog" id="MySetting"></i>
+						<div class="MyUlDiv">
+							<ul>
+								<li><i class="fa fa-shield"></i>Security</li>
+								<li><i class="fa fa-user"></i>About us</li>
+								<li><i class="fa fa-battery-half"></i>Battery</li>
+								<li><i id="" class="fa fa-bell"></i>Notification</li>
+								<li><i class="fa fa-volume-up"></i>Sound & Vibration</li>
+								<li><i class="fa fa-sun-o"></i>Display & Brightness</li>
+							</ul>
+						</div>
+				</div>
+			
+			
+			
+			
+			<div id="detils">
+				<h1>We do things right.</h1>
+				<p>Lorem ipsum dolor sit amet consectetur  addipisicing elit. Maxime ipsa nulla sed quis rerum amet natus quas necessitatibus.</p>
+			
+			</div>
+			
+			<button class="GetBtn"> Get start</button>
+	
+			
+		</div> 
+		<div class="img_box">
+			<img src="1596502137230.jpg" alt="" />
+		</div>
+
+		<button class="btn">SING UP</button>
+	
+	
+		<div class="singup_form">
+			<i class="fa fa-close" id="close_vertical"></i>
+			
+			<h2 class="singTitle">SING UP</h2>
+			
+			<div class="emailDiv">
+				
+				<input type="text" autocomplete="off" required />
+				<label for="name" class="lableName"><span class="content_name">Email</span></label>
+			</div>
+		
+			<div class="PwdDiv">
+				
+				<input type="text" autocomplete="off" required />
+				<label for="name" class="lableName_2"><span class="content_name_2">Password</span></label>
+			</div>
+			
+			<button class="login" type="submit">LOG IN</button>
+			
+		</div>
+	
+	
+	
+	</div>
+	
+	<script type="text/javascript">
+
+	$("document").ready(function(){
+		
+		$("#btnWrk").click(function(){
+			
+		$(".subManu_2").slideUp(100,function(){
+			
+			$(".subManu_1").slideToggle(500);
+			$(".subManu_3").slideUp(100)
+			
+		})
+		})
+		
+		
+		$("#btnPrc").click(function(){
+			
+		$(".subManu_1").slideUp(100,function(){
+			
+			$(".subManu_2").slideToggle(500);
+			$(".subManu_3").slideUp(100)
+			
+		})
+		})
+		
+		$("#btnSrv").click(function(){
+			
+		$(".subManu_2").slideUp(100,function(){
+			
+			$(".subManu_3").slideToggle(500);
+			$(".subManu_1").slideUp(100)
+			
+		})
+		})
+		
+		$("#btnHom").click(function(){
+			$(".subManu_1").slideUp(200);
+			$(".subManu_2").slideUp(200);
+			$(".subManu_3").slideUp(200);
+		})
+		
+		
+	 
+		$("#MySetting").click(function(){
+		$(".MyUlDiv").slideToggle(600);
+			
+		})
+		
+
+		document.querySelector("#MySetting").addEventListener("click",function(){
+		
+		document.querySelector(".setting").classList.toggle("MyHover");
+		
+		document.querySelector("#MySetting").classList.toggle("MySetting_2");
+		
+		
+		})
+		
+		
+		document.querySelector(".btn").addEventListener("click",function(){
+		
+			document.querySelector(".singup_form").setAttribute("style","transform:scaleX(1);opacity:1")
+		
+		}) 
+		
+		
+		document.querySelector("#close_vertical").addEventListener("click",function(){
+		
+		document.querySelector(".singup_form").setAttribute("style","transform:scaleX(0);opacity:0")
+		
+		})
+		
+		
+		
+		<!-- sing up btn  -->
+		
+		document.querySelector(".btn").addEventListener("click",function(){
+		
+			document.querySelector(".setting").classList.remove("MyHover");
+			
+			document.querySelector("#MySetting").classList.remove("MySetting_2");
+		})
+		
+		$(".btn").click(function(){
+		$(".MyUlDiv").slideUp(600);
+			
+		})
+		
+		$(".btn").click(function(){
+			$(".subManu_1").slideUp(200);
+			$(".subManu_2").slideUp(200);
+			$(".subManu_3").slideUp(200);
+		})
+		
+		
+		<!-- sing up btn end -->
+		
+		
+		<!-- Home btn -->
+		
+		document.querySelector("#btnHom").addEventListener("click",function(){
+		
+			document.querySelector(".setting").classList.remove("MyHover");
+			
+			document.querySelector("#MySetting").classList.remove("MySetting_2");
+		})
+		
+		$("#btnHom").click(function(){
+		$(".MyUlDiv").slideUp(600);
+			
+		})
+		
+		<!-- Home btn end -->
+		
+		
+		
+		document.querySelector("#MySetting").addEventListener("click",function(){
+		
+		document.querySelector(".singup_form").setAttribute("style","transform:scaleX(0);opacity:0")
+		
+		})
+		
+		
+		$("#MySetting").click(function(){
+			$(".subManu_1").slideUp(200);
+			$(".subManu_2").slideUp(200);
+			$(".subManu_3").slideUp(200);
+		})
+		
+		
+		
+		document.querySelector("#btnWrk").addEventListener("click",function(){
+		
+		document.querySelector(".setting").classList.remove("MyHover");
+			
+		document.querySelector("#MySetting").classList.remove("MySetting_2");
+		})
+		
+		$("#btnWrk").click(function(){
+		$(".MyUlDiv").slideUp(600);
+			
+		})
+		
+		
+		
+		document.querySelector("#btnPrc").addEventListener("click",function(){
+		
+		document.querySelector(".setting").classList.remove("MyHover");
+			
+		document.querySelector("#MySetting").classList.remove("MySetting_2");
+		})
+		
+		$("#btnPrc").click(function(){
+		$(".MyUlDiv").slideUp(600);
+			
+		})
+		
+		
+		
+		document.querySelector("#btnSrv").addEventListener("click",function(){
+		
+		document.querySelector(".setting").classList.remove("MyHover");
+			
+		document.querySelector("#MySetting").classList.remove("MySetting_2");
+		})
+		
+		$("#btnSrv").click(function(){
+		$(".MyUlDiv").slideUp(600);
+			
+		})
+		
+		
+		document.querySelector("#btnHom").addEventListener("click",function(){
+		
+		document.querySelector(".singup_form").setAttribute("style","transform:scaleX(0);opacity:0")
+		
+		})
+		
+		
+		
+		document.querySelector("#btnWrk").addEventListener("click",function(){
+		
+		document.querySelector(".singup_form").setAttribute("style","transform:scaleX(0);opacity:0")
+		
+		})
+		
+		
+		
+		document.querySelector("#btnPrc").addEventListener("click",function(){
+		
+		document.querySelector(".singup_form").setAttribute("style","transform:scaleX(0);opacity:0")
+		
+		})
+		
+		
+		
+		document.querySelector("#btnSrv").addEventListener("click",function(){
+		
+		document.querySelector(".singup_form").setAttribute("style","transform:scaleX(0);opacity:0")
+		
+		})
+		
+		
+		
+	})
+	
+
+	
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

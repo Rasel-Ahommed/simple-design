@@ -1,0 +1,413 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family:sans-serif;
+}
+.main_box{
+	width:100%;
+	height: 577px;
+	background: #7765dc;
+}
+.content_box{
+	position:absolute;
+	width: 956px;
+	height: 470px;
+	background: #00adff;
+	float:left;
+}
+
+.img_box{
+	position:relative;
+	width:300px;
+	height: 325px;
+	left: 63%;
+	top: 69px;
+	box-shadow: -1px 1px 10px 0px #000000a6;
+}
+
+.img_box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+nav.navBar {
+    margin-left: 58px;
+}
+
+#icon_div{
+	float:left;
+	margin-top: 7px;
+}
+
+#RA{
+    font-family: Colonna MT;
+    color: #10ff00;
+    font-size: 36px;
+}	
+#mylogo{
+	color: red;
+    font-family: arial black;
+    font-size: 22px;
+}
+
+nav .ul {
+    display: flex;
+    margin-left: 173px;
+    padding: 13px 0px;
+    list-style: none;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+
+nav .ul li {
+    padding: 3px 17px;
+    font-size: 14px;
+    color: white;
+	letter-spacing: 2px;
+}
+
+nav .ul li:after{
+	content:"";
+	width:0;
+	height:2px;
+	display:block;
+	margin:auto;
+	background:#332e2e;
+	transition:.5s;
+}
+
+nav .ul li:hover:after{
+	width:100%;
+}
+.subManu_1 {
+    width: 135px;
+    background: white;
+    position: absolute;
+    top: 50px;
+    left: 30%;
+    padding: 13px 1px;
+	display:none;
+}
+.subManu_1 ul {
+    list-style: none;
+}
+
+.subManu_1 ul li {
+    color: black;
+    padding: 7px 49px;
+}
+
+.subManu_2 {
+    width: 135px;
+    background: white;
+    position: absolute;
+    top: 50px;
+    left: 39%%;
+    padding: 13px 1px;
+	display:none;
+}
+.subManu_2 ul {
+    list-style: none;
+}
+
+.subManu_2 ul li {
+    color: black;
+    padding: 7px 49px;
+}
+
+.subManu_3 {
+    width: 135px;
+    background: white;
+    position: absolute;
+    top: 50px;
+    left: 39%%;
+    padding: 13px 1px;
+	display:none;
+}
+.subManu_3 ul {
+    list-style: none;
+}
+
+.subManu_3 ul li {
+    color: black;
+    padding: 7px 49px;
+}
+
+.setting {
+	position:absolute;
+    width: 44px;
+    height: 39px;
+    background: white;
+    margin-left: 4px;
+    float: left;
+    margin-top: 7px;
+    border-radius: 3px;
+	transition:.9s;
+} 
+
+.MyHover{
+	position:absolute;
+	width:244px;
+	height:342px;
+	background:white;
+	margin-left:4px;
+	float:left;
+	margin-top:7px;
+	border-radius:3px;
+	cursor:pointer;
+	transition:.9s;
+}
+
+.MyUlDiv {
+	position: absolute;
+    display: none;
+    width: 240px;
+}
+
+.MyUlDiv ul{
+	font-size: 18px;
+    font-family: sans-serif;
+    list-style: none;
+    padding-left: 20px;
+    padding-top: 40px;
+    cursor: pointer;
+}
+
+.MyUlDiv li {
+    padding-bottom: 16px;
+}
+
+.MyUlDiv li:hover {
+   color:#787979; 
+}
+
+.MyUlDiv li i{
+    padding-right: 8px;
+}
+
+.MyUlDiv li:hover i{
+	color:black;
+}
+
+#MySetting{
+    padding: 7px 11px;
+    font-size: 26px;
+    cursor: pointer;
+	transition:1s;
+}
+
+
+
+.MySetting_2{
+	transform:rotate(200deg);
+}  
+.btn{
+	float:right;
+}
+.btn {
+    position: absolute;
+    top: 2%;
+    left: 90%;
+    padding: 11px;
+    background: none;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid white;
+    cursor: pointer;
+    font-size: 13px;
+    width: 114px;
+    font-family: arial black;
+    outline: none;
+}
+button.btn:hover {
+    background: white;
+	color:black;
+}
+#detils {
+    float: left;
+    width: 531px;
+    margin: 40px 97px;
+    padding: 52px;
+}
+#detils h1 {
+    color: white;
+    font-family: sans-serif;
+    font-size: 42px;
+    padding-bottom: 29px;
+}
+#detils p {
+    font-family: sans-serif;
+    color: #e4dddd;
+}
+button.GetBtn {
+    margin-top: 299px;
+    margin-left: -580px;
+    padding: 14px 46px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    border: 1px solid white;
+    background: #00adff00;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: arial black;
+    outline: none;
+}
+
+button.GetBtn:hover {
+    background: white;
+    color: black;
+}
+
+.singup_form {
+	transition:all .5s;
+	transform:scaleX(0);
+	transform-origin:right;
+	opacity:0;
+    width: 291px;
+    height: 408px;
+    background: white;
+    position: absolute;
+    top: 11%;
+    right: 0%;
+    border-radius: 5px;
+}
+
+#close_vertical {
+    font-size: 29px;
+    padding: 4px 10px;
+    cursor: pointer;
+	color:#0089ff;
+}
+
+h2.singTitle {
+    position: relative;
+    top: 11%;
+    left: 20%;
+    font-family: sans-serif;
+    border-bottom: 3px solid;
+    width: 167px;
+    color: #0089ff;
+    text-align: center;
+}
+
+
+.emailDiv {
+    height: 40px;
+    position: relative;
+    top: 23%;
+    left: 17px;
+    width: 88%;
+	overflow:hidden;
+}
+
+.emailDiv input {
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    border: none;
+	outline:none;
+}
+
+.emailDiv label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 58%;
+    pointer-events: none;
+    border-bottom: 1px solid #0089ff;
+	color:#0089ff;
+}
+
+.content_name {
+    position: absolute;
+    bottom: 5px;
+    top: 0px;
+    transition: all .3s ease;
+}
+.emailDiv input:focus + .lableName .content_name, .emailDiv input:valid + .lableName .content_name {
+    transform: translateY(-107%);
+	font-size:12px;
+	color:#0cd2ff;
+}
+
+
+
+.PwdDiv {
+    height: 40px;
+    position: relative;
+    top: 30%;
+    left: 17px;
+    width: 88%;
+	overflow:hidden;
+}
+
+.PwdDiv input {
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    border: none;
+	outline:none;
+}
+
+.PwdDiv label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 58%;
+    pointer-events: none;
+    border-bottom: 1px solid #0089ff;
+	color:#0089ff;
+}
+
+.content_name_2 {
+    position: absolute;
+    bottom: 5px;
+    top: 0px;
+    transition: all .3s ease;
+}
+.PwdDiv input:focus + .lableName_2 .content_name_2, .PwdDiv input:valid + .lableName_2 .content_name_2 {
+    transform: translateY(-107%);
+	font-size:12px;
+	color:#0cd2ff;
+}
+
+button.login {
+    position: absolute;
+    top: 80%;
+    left: 29%;
+    height: 40px;
+    width: 137px;
+    font-family: arial black;
+    background: none;
+    outline: none;
+    border: 1px solid #0089ff;
+    border-radius: 5px;
+    color: #0089ff;
+	cursor:pointer;
+}
+
+button.login:hover{
+	background:	#0089ff;
+	color:white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
